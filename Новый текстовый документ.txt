@@ -1,0 +1,26 @@
+Выберите какой-нибудь проект на изучаемом вами языке программирования, 
+с которым вы будете тренироваться работать в Git, и инициализируйте 
+в папке этого проекта локальный репозиторий.
+
+git init 
+git add .
+git commit -m 'initial'
+
+Создайте непустой удалённый репозиторий (например, с файлом README.md) с именем, 
+соответствующим имени этого проекта.
+
+https://github.com/PolyakovBoris/pr1test.git
+
+
+Подключите свой проект к этому удалённому репозиторию и отправьте в него код этого проекта. 
+
+git remote add origin https://github.com/PolyakovBoris/pr1test.git
+git remote -v
+git branch --set-upstream-to=origin/master master
+
+Самостоятельно разрешите конфликты и проблемы, если они возникнут при выполнении данного задания.
+
+git pull origin master --allow-unrelated-histories
+git add .
+git commit -m 'join'
+git push
